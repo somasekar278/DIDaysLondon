@@ -1,7 +1,11 @@
 -- Databricks notebook source
-CREATE OR REFRESH LIVE TABLE airlines_bronze
+CREATE OR REFRESH STREAMING TABLE airlines_bronze
 AS
-SELECT * FROM odl_instructor_638452.airlines_pt0_csv
+SELECT 
+*
+FROM cloud_files('/databricks-datasets/airlines/part-0000[0-10]', "csv", map(
+  "header", "true",
+  "inferSchema", "true"))
 
 -- COMMAND ----------
 
