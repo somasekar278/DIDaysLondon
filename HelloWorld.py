@@ -1,2 +1,2 @@
 # Databricks notebook source
-print('Hello Düsseldorf!')
+print('Hello World!')
