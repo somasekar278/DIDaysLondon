@@ -17,4 +17,5 @@ SELECT UniqueCarrier, round(count_if(WasLate) / count(*) * 100) as LatePercentag
 
 -- COMMAND ----------
 
-
+SELECT UniqueCarrier, LatePercentage
+FROM ${username}.Airlines_Gold

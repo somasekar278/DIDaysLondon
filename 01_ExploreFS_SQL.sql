@@ -38,3 +38,10 @@ OPTIONS
 -- COMMAND ----------
 
 SELECT * FROM ${username}.airlines_pt0_csv
+
+-- COMMAND ----------
+
+SELECT
+  SUM(CASE WHEN DepDelay > 0 THEN 1 ELSE 0 END) AS num_delayed_flights
+FROM
+  odl_instructor_927871.airlines_pt0_csv

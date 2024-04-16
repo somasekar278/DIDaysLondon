@@ -25,7 +25,7 @@ describe detail ${username}.Airlines_Bronze
 
 -- COMMAND ----------
 
--- MAGIC %fs ls /user/hive/warehouse/odl_instructor_638452.db/airlines_bronze
+-- MAGIC %fs ls dbfs:/user/hive/warehouse/odl_instructor_927871.db/airlines_bronze
 
 -- COMMAND ----------
 
