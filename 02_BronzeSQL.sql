@@ -5,6 +5,7 @@
 
 -- MAGIC %python
 -- MAGIC dbutils.widgets.text('username', get_user_name())
+-- MAGIC print ( get_user_name())
 
 -- COMMAND ----------
 
